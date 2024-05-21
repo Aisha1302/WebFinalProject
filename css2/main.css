@@ -1,0 +1,721 @@
+/* & S  T  A  R  T     G  L  O  B  A  L     S  T  Y  L  E */
+
+:root {
+    --main-color: #edcf5d;
+    --grey-color: #a4a4a4;
+}
+
+body {
+    font-family: "Poetsen One", sans-serif;
+    margin: 0;
+}
+
+/* & E  N  D     G  L  O  B  A  L     S  T  Y  L  E */
+
+/* ^ S  T  A  R  T     H  O  M  E     S  E  C  T  I  O  N     S  T  Y  L  E */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 15px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.about-nav {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.navbar.scrolled {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.navbar .items {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo img {
+    cursor: pointer;
+    margin-top: 3px;
+    width: 40%;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    transition: color 0.5s;
+}
+
+#home-nav {
+    color: var(--main-color);
+}
+
+.links li:hover a {
+    color: var(--main-color);
+}
+
+.home {
+    background-image: url("../images/hero\ section.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.home-cap {
+    line-height: 10px;
+    margin-top: 220px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.home-cap h2 span {
+    text-transform: capitalize;
+    color: white;
+}
+
+.home-cap h2 #your {
+    color: var(--main-color);
+}
+
+.home-cap h2 #body {
+    color: var(--main-color);
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: var(--grey-color)
+}
+
+.exploreBtn {
+    cursor: pointer;
+    padding: 14px 24px;
+    border-radius: 20px;
+    border: 3px solid var(--main-color);
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.exploreBtn:hover {
+    background-color: var(--main-color);
+}
+
+.exploreBtn a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+}
+
+/* ^ E  N  D     H  O  M  E     S  E  C  T  I  O  N     S  T  Y  L  E */
+
+/* & S  T  A  R  T     F  O  O  T  E  R     S  T  Y  L  E */
+
+.footer {
+    background-image: url("../images/footerBg.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* ~ social */
+.footer .info {
+    width: 20%;
+    margin: 30px;
+    margin-right: 10%;
+    padding: 10px;
+    position: relative;
+}
+
+.footer img {
+    width: 20%;
+    margin: 10px;
+}
+
+.footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer .info ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer .info p {
+    width: 400px;
+}
+
+.footer .info li {
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+.footer .info i {
+    color: white;
+    transition: all 0.5s;
+}
+
+.footer .info i:hover {
+    color: var(--main-color);
+}
+
+.footer .social h3 {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.footer .info h3::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    color: white;
+    background-color: #6c6c6c;
+    position: absolute;
+    top: 190px;
+    left: 3%;
+}
+
+/* ~ subscribe */
+.subscribe {
+    width: 35%;
+    margin: 30px;
+    padding: 10px;
+}
+
+.subscribe h3 {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.subscribe p {
+    width: 80%;
+}
+
+.subscribe .subscribe-links ul {
+    list-style: none;
+}
+
+.subscribe .subscribe-links li {
+    padding: 10px 10px 0 0;
+}
+
+.subscribe .subscribe-links a {
+    transition: all 0.2s;
+    text-decoration: none;
+    color: white;
+}
+
+.subscribe .subscribe-links li:hover a {
+    color: var(--main-color);
+}
+
+.subscribe input {
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.subscribe .sub-btn {
+    cursor: pointer;
+    padding: 10px 16px;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.subscribe .sub-btn:hover {
+    background-color: #a99130;
+}
+
+/* ~ get in touch */
+.get-in-touch {
+    margin: 30px;
+    padding: 10px;
+}
+
+.get-in-touch h3 {
+    color: var(--main-color);
+}
+
+.get-in-touch ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+.get-in-touch ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.get-in-touch ul i {
+    margin-right: 15px;
+}
+
+/* & E  N  D     F  O  O  T  E  R     S  T  Y  L  E */
+
+/* & S  T  A  R  T     A  B  O  U  T     S  T  Y  L  E */
+
+#who-we .who-we {
+    margin-top: 7%;
+    padding: 7% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#who-we .who-we img {
+    width: 100%;
+}
+
+#who-we .who-we .about-img {
+    width: 40%;
+}
+
+#who-we .who-we .caption {
+    width: 60%;
+}
+
+#who-we .who-we .caption p {
+    width: 80%;
+}
+
+#who-we .who-we .caption h2 {
+    color: var(--main-color);
+}
+
+/* & E  N  D     A  B  O  U  T     S  T  Y  L  E */
+
+
+/* & S  T  A  R  T     S  U  P  P  L  E  M  E  N  T  S    S  T  Y  L  E */
+
+#Supplements .Supplements {
+    background-color: #e4e4e4be;
+    margin-top: 7%;
+    padding: 7% 5%;
+    display: flex;
+}
+
+#Supplements .Supplements img {
+    width: 100%;
+}
+
+#Supplements .Supplements .Supplements-img {
+    width: 50%;
+}
+
+#Supplements .Supplements .caption {
+    margin: 0 10%;
+    width: 60%;
+}
+
+#Supplements .Supplements .caption h2 {
+    color: var(--main-color);
+}
+
+/* & E  N  D     S  U  P  P  L  E  M  E  N  T  S     S  T  Y  L  E */
+
+/* & S  T  A  R  T     E  Q  U  I  P  M  E  N  T    S  T  Y  L  E */
+
+#equipment .equipment {
+    margin-top: 7%;
+    padding: 7% 5%;
+    display: flex;
+}
+
+#equipment .equipment img {
+    width: 100%;
+}
+
+#equipment .equipment .equipment-img {
+    width: 50%;
+}
+
+#equipment .equipment .caption {
+    margin: 0 10%;
+    width: 60%;
+}
+
+#equipment .equipment .caption h2 {
+    color: var(--main-color);
+}
+
+/* & E  N  D     E  Q  U  I  P  M  E  N  T     S  T  Y  L  E */
+
+/* & S  T  A  R  T     C  L  O  T  H  E  S    S  T  Y  L  E */
+
+#clothes .clothes {
+    background-color: #e4e4e4be;
+    margin-top: 7%;
+    padding: 7% 5%;
+    display: flex;
+}
+
+#clothes .clothes img {
+    width: 100%;
+}
+
+#clothes .clothes .clothes-img {
+    width: 50%;
+}
+
+#clothes .clothes .caption {
+    margin: 0 10%;
+    width: 60%;
+}
+
+#clothes .clothes .caption h2 {
+    color: var(--main-color);
+}
+
+/* & E  N  D     C  L  O  T  H  E  S     S  T  Y  L  E */
+
+/* ^ slider */
+
+.slider {
+    position: relative;
+    width: 80%;
+    width: 40%;
+    margin: 2% auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: all 1s;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.service-slider {
+    padding: 2% 0;
+    margin: 2% 0;
+}
+
+.service-section {
+    background-color: #e4e4e4be;
+}
+
+.service-slider h2 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px
+}
+
+.service-slider .btn {
+    width: fit-content;
+    margin: auto;
+}
+
+.service-slider button {
+    cursor: pointer;
+    padding: 14px 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--main-color);
+    margin: 10px;
+}
+
+.service-slider button a {
+    transition: all 0.5s;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.service-slider button:hover {
+    background-color: white;
+    border: 2px solid var(--main-color);
+}
+
+.service-slider button:hover a {
+    color: var(--main-color);
+}
+
+/* &  S  T  A  R  T      S  U  P  P  L  E  M  E  N  T  S      S  T  Y  L  E*/
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.container .row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 30px 0;
+}
+
+.container .item {
+    margin: 20px;
+    width: 30%;
+    position: relative;
+    border: 3px solid var(--main-color);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.container .item .caption {
+    text-align: center;
+}
+
+.container .item img {
+    width: 400px;
+}
+
+.btn-success {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(8, 198, 8, 0.995);
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    transition: all 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+
+figure {
+    margin: 0;
+}
+
+.container .item img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* ^ move it according to the item div */
+.container .layer {
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 1s;
+    border-radius: 30px;
+}
+
+.container .layer-cap {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.container .layer-cap p {
+    margin: auto;
+    color: #fff;
+}
+
+.container .item:hover .layer {
+    opacity: 1;
+}
+
+.container .item-btn {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--main-color);
+    transition: all 0.5s;
+}
+
+.container .item-btn a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    transition: color 0.5s;
+}
+
+.container .item-btn:hover {
+    background-color: transparent;
+    border: 3px solid var(--main-color);
+}
+
+/* &  E  N  D     S  U  P  P  L  E  M  E  N  T  S      S  T  Y  L  E*/
+
+/* ^ S  I  G  N  U  P    &  S  I  G  N   I  N*/
+.signUp,
+.login {
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.signUp,
+.login h2 {
+    color: var(--main-color);
+    font-family: "Poetsen One", sans-serif;
+}
+
+.form-input {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form-input input {
+    width: 80%;
+    border-radius: 20px;
+    padding: 12px 10px;
+    border: 3px solid var(--main-color);
+}
+
+.submit {
+    width: 80%;
+    padding: 14px 24px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.login .register a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+/* &  C  A  R  T  */
+
+.cart {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.cart-table {
+    margin: auto;
+}
+
+.cart .confirm-order {
+    margin-top: 100px;
+}
+
+.cart thead {
+    border-radius: 20px;
+}
+
+.cart thead th {
+    border-radius: 5px;
+    padding: 14px 20px;
+    background-color: var(--main-color);
+}
+
+.cart tbody td {
+    padding: 14px 20px;
+    border: 2px solid var(--grey-color);
+    border-radius: 5px;
+}
+
+.cart .remove-item {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(169, 14, 14);
+    padding: 14px 20px;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.cart .remove-item:hover {
+    color: rgb(169, 14, 14);
+    border: 2px solid rgb(169, 14, 14);
+    background-color: transparent;
+}
+
+/* ^ S  E  T  T  I  N  G  S */
+
+.change-password h2 {
+    color: var(--main-color);
+}
+
+.change-password {
+    margin-bottom: 50px;
+}
+
+.success{
+    margin-bottom: 80px;
+}
+
+.order-table thead {
+    border-radius: 20px;
+}
+
+.order-table thead th {
+    border-radius: 5px;
+    padding: 14px 20px;
+    background-color: var(--main-color);
+}
+.order-table a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.order-table tbody td {
+    padding: 14px 20px;
+    border: 2px solid var(--grey-color);
+    border-radius: 5px;
+}
+
+.red{
+    color:red;
+}
